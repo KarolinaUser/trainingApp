@@ -1,0 +1,70 @@
+<div>
+  <h2 class="center" style="padding: 20px">{{ mainTitle }}</h2>
+</div>
+
+<div class="center">
+  <button routerLink="/" class="buttonHome">ADD THE DOG</button>
+  <button routerLink="/" class="buttonHome">FIND THE DOG</button>
+</div>
+<br />
+
+<h3 class="center" style="margin-top: 15px">
+  <strong>{{ secondTitle }}</strong>
+</h3>
+
+<div class="carousel">
+  <div class="carousel_cards">
+    <div class="carousel_card">
+      <img class="carousel_img" src="assets/img1.png" alt="dog1" />
+    </div>
+
+    <div class="carousel_card">
+      <img class="carousel_img" src="assets/img2.png" alt="dog2" />
+    </div>
+
+    <div class="carousel_card">
+      <img class="carousel_img" src="assets/img3.png" alt="dog3" />
+    </div>
+
+    <div class="carousel_card">
+      <img class="carousel_img" src="assets/img4.png" alt="dog4" />
+    </div>
+
+    <div class="carousel_card">
+      <img class="carousel_img" src="assets/img5.png" alt="dog5" />
+    </div>
+
+    <div class="carousel_card">
+      <img class="carousel_img" src="assets/img6.png" alt="dog6" />
+    </div>
+
+    <div class="carousel_card">
+      <img class="carousel_img" src="assets/img7.png" alt="dog7" />
+    </div>
+
+    <div class="carousel_card">
+      <img class="carousel_img" src="assets/img8.png" alt="dog8" />
+    </div>
+  </div>
+
+  <div class="carousel_control">
+    <button class="carousel_btn back">
+      <i class="fa-solid fa-backward"></i>
+    </button>
+    <button class="carousel_btn Next">
+      <i class="fa-solid fa-forward"></i>
+    </button>
+    <script type="text/javascript">
+        const next = document.querySelector(".Next");
+        const back = document.querySelector(".back");
+        const carousel = document.querySelector(".carousel_cards");
+        let angle = 0;
+    
+        next.addEvensListner("click"),
+          () => {
+            angle -= 45;
+            carousel.style.transform = `translateZ(-25rem)
+      roteteY(${angle}deg)`;
+          };
+      </script>
+  </div>
