@@ -12,6 +12,7 @@
   <strong>{{ secondTitle }}</strong>
 </h3>
 
+
 <div class="carousel">
   <div class="carousel_cards">
     <div class="carousel_card">
@@ -45,26 +46,13 @@
     <div class="carousel_card">
       <img class="carousel_img" src="assets/img8.png" alt="dog8" />
     </div>
-  </div>
-
+ </div>
   <div class="carousel_control">
-    <button class="carousel_btn back">
-      <i class="fa-solid fa-backward"></i>
-    </button>
-    <button class="carousel_btn Next">
-      <i class="fa-solid fa-forward"></i>
-    </button>
-    <script type="text/javascript">
-        const next = document.querySelector(".Next");
-        const back = document.querySelector(".back");
-        const carousel = document.querySelector(".carousel_cards");
-        let angle = 0;
-    
-        next.addEvensListner("click"),
-          () => {
-            angle -= 45;
-            carousel.style.transform = `translateZ(-25rem)
-      roteteY(${angle}deg)`;
-          };
-      </script>
+    <button  class="carousel_btn back" appBack><i class="fa-solid fa-backward"></i></button>
+    <button  class="carousel_btn" appNext><i class="fa-solid fa-forward"></i></button>
   </div>
+</div> 
+
+
+
+
