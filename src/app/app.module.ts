@@ -5,8 +5,9 @@ import { AppComponent } from './app.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { NgImageSliderModule } from 'ng-image-slider';
 import { HomeComponent } from './home/home.component';
-import { NextDirective } from './home/directives/next.directive';
-import { BackDirective } from './home/directives/back.directive';
+import { NextDirective } from './directives/next.directive';
+import { BackDirective } from './directives/back.directive';
+import { TestComponent } from './test/test.component';
 
 
 
@@ -18,6 +19,7 @@ import { BackDirective } from './home/directives/back.directive';
     HomeComponent,
    NextDirective,
    BackDirective,
+   TestComponent,
    
     
   ],

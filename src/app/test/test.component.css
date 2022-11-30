@@ -1,0 +1,31 @@
+.same {
+    height: 200px;
+    padding: 10px;
+    background-color: blue;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+ .same.red {
+    background-color: red;
+}
+ .same.green {
+    background-color: green;
+}
+
+ .same.orange {
+    background-color: orangered;
+}
+
+ .same.gray {
+    background-color: gray;
+}
+
+.wraper  {
+ display: flex;
+ 
+}
+
+
+
+
