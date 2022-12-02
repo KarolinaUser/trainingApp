@@ -8,6 +8,7 @@
 
  .same.red {
     background-color: red;
+    width: 150px;
 }
  .same.green {
     background-color: green;
@@ -15,6 +16,7 @@
 
  .same.orange {
     background-color: orangered;
+    width: 150px;
 }
 
  .same.gray {
@@ -23,6 +25,7 @@
 
 .wraper  {
  display: flex;
+ 
  
 }
 
