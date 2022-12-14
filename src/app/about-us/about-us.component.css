@@ -1,8 +1,10 @@
 
+* {
+  box-sizing: border-box;
+}
+
 .wrapper {
   display: flex;
-  flex-flow: row wrap;
-  box-sizing: border-box;
 }
 
 .wrapper > * {
@@ -12,68 +14,43 @@
 .header {
   background: ghostwhite;
   text-align: center;
+  margin: 0;
+  padding: 30px;
 }
 
 .main {
   text-align: left;
+  flex: 3;
 }
 
 .aside-1 i {
   margin: 5px;
 }
 
+.aside-1 .aside-2 {
+  flex: 1;
+}
+
 h2 {
   color: gray;
 }
 
-@media all and (min-width: 600px) {
-  .aside { flex: 1 0 0; }
-}
+@media all and (max-width: 600px) {
+  .wrapper { 
+    flex-direction: column;
+   }
 
-@media all and (min-width: 800px) {
-  .main    { flex: 3 0px; }
-  .aside-1 { order: 1; } 
-  .main    { order: 2; }
-  .aside-2 { order: 3; }
-  .footer  { order: 4; }
-}
+   .main {
+    order: 1;
+   }
 
+   .aside-1 {
+    order: 2;
+   }
 
-
-
-
-/* Sposób z poleconej strony
-.wrapper {
-  display: flex;  
- flex-flow: row wrap;
-  font-weight: bold;
-  text-align: center; 
-}
-
-.wrapper > * {
-  padding: 10px;
-  flex: 1 100%;
-}
-
-.header {
-  background: tomato;
-}
-
-.footer {
-  background: lightgreen;
-}
-
-.main {
-  text-align: left;
-  background: deepskyblue;
-}
-
-.aside-1 {
-  background: gold;
-}
-
-.aside-2 {
-  background: hotpink;
+   .aside-2 {
+    order: 3;
+   }
 }
 
 @media all and (min-width: 600px) {
@@ -87,111 +64,3 @@ h2 {
   .aside-2 { order: 3; }
   .footer  { order: 4; }
 }
-
-body {
-  padding: 2em; 
-} */
-
-
-/* Sposób który działa nie tak 
-* {
-  margin: 0%;
-  box-sizing: border-box;
-}
-.wrapper {
-  background-color: greenyellow;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-}
-
-/* .wrapper > * {
-  padding: 10px;
-  margin: 10px;
-  flex: 1 100%;
-  border-radius: 10px;
-} */
-
-
-/* .header {
-    background-color: #f1f1f1;
-    height: 120px;
-  }
-
-  .footer {
-    background-color: #f1f1f1;
-    height: 80px;
-  }
-
-  .main {
-    /* text-align: left;
-    height: 300px;
-    background-color: aquamarine;
-    font-size: 24px; */
-    /* background-color: firebrick;
-    padding: 200px;
-    display: flex;
-    flex: 1;
-  }
-
-  .aside1 {
-background-color: darkgoldenrod;
-  }
-
-  .aside2 {
-    background-color: blueviolet;
-
-  }   */
-
-/*   @media all and (min-width: 800px) {
-    .main {
-      flex: 3;
-    }
-    .aside1 {
-      order: 1;
-      
-    }
-
-    .aside2 {
-      order: 2;
-    }
-
-    .main {
-      order: 2;
-    }
-
-    .footer {
-      order: 4;
-    }
-  }
-
-  @media all and (min-width: 600px) {
-    .aside {
-      flex: 1;
-    }
-  } */
-  
-  /* .column {
-   float: left;
-    padding: 15px;
-  }
-
-  .column.side {
-    width: 15%;
-  }
-  
-  .column.middle {
-    width: 60%;
-  }
-  
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  @media screen and (max-width: 600px) {
-    .column.side, .column.middle {
-      width: 100%;
-    }
-}  */
