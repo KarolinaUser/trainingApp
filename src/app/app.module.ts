@@ -8,6 +8,8 @@ import { HomeComponent } from './home/home.component';
 import { NextDirective } from './directives/next.directive';
 import { BackDirective } from './directives/back.directive';
 import { TestComponent } from './test/test.component';
+import { PetComponent } from './pet/pet.component';
+
 
 
 
@@ -20,6 +22,8 @@ import { TestComponent } from './test/test.component';
    NextDirective,
    BackDirective,
    TestComponent,
+   PetComponent,
+  
    
     
   ],
