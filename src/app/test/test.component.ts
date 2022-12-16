@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DogHome } from '../mock-dog';
 
 @Component({
   selector: 'app-test',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TestComponent implements OnInit {
 
-  constructor() { }
+    //my new dog list 
+    dog = DogHome;
 
-  ngOnInit(): void {
-  }
+
+ngOnInit() {
+}
+
+
+
+  constructor() { }
 
 }
