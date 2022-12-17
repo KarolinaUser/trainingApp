@@ -1,8 +1,21 @@
 
-    <ol>
-      <li *ngFor="let pet of dog">
-          <img style="height: 200px;" src="{{pet.image}}">
-          <p>{{pet.name}}</p>
-      </li>
-    </ol>
+<!--    <ol>-->
+<!--      <li *ngFor="let pet of dog">-->
+<!--          <img style="height: 200px;" src="{{pet.image}}">-->
+<!--          <p>{{pet.name}}</p>-->
+<!--      </li>-->
+<!--    </ol>-->
 
+<div>
+
+  <h3>Spróbuj zaznaczyć jeden z elementów (highlight) i zobacz jak zmienia się zachowanie w przypadku gdy mamy trackBy a jak gdy go nie mamy</h3>
+
+  W/o trackBy
+  <app-pet *ngFor="let dog of (dogs | async)" [pet]="dog" class="a"></app-pet>
+
+  W trackBy
+  <app-pet *ngFor="let dog of (dogs | async) trackBy: track" [pet]="dog" class="a"></app-pet>
+
+
+  <h4>Zwróć uwagę, że w przypadku gdy masz trackBy, highlight jest usuwany tylko w momencie gdy dany element zmieni swoją wartość (i usuwa się wyłącznie na poziomie tej wartości, gdzie reszta zaznaczenia zachowuje highlight). W przypadku listy bez trackBy, za każdą emisją nowego elementu, highlight zostaje usunięty. TrackBy służy temu, żeby ograniczyć zużycie pamięci przeglądarki przez przerenderowanie niezmienionych elementów</h4>
+</div>

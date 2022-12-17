@@ -1,5 +1,5 @@
-import { Component, Input } from '@angular/core';
-import { Dog } from '../test/test.component';
+import {Component, Input} from '@angular/core';
+import {Dog} from "../test/test.component";
 
 @Component({
   selector: 'app-pet',
@@ -8,8 +8,6 @@ import { Dog } from '../test/test.component';
 })
 export class PetComponent {
 
-
- constructor(
-  @Input() dog: Dog){}
+  @Input() pet: Dog | undefined;
 
 }

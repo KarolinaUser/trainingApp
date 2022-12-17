@@ -1,1 +1,6 @@
-<p>pet works!</p>
+<div class="pet" [class.available]="pet?.available">
+  <span>{{ pet?.id }}</span>
+  <span>{{ pet?.name }}</span>
+  <span>{{ pet?.age }}</span>
+  <span>{{ pet?.available ? 'Available' : 'Not-available' }}</span>
+</div>
