@@ -9,6 +9,7 @@ import {BackDirective} from './directives/back.directive';
 import {TestComponent} from './test/test.component';
 import { PetComponent } from './pet/pet.component';
 import { FindDogComponent } from './find-dog/find-dog.component';
+import { AddDogComponent } from './add-dog/add-dog.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { FindDogComponent } from './find-dog/find-dog.component';
     BackDirective,
     TestComponent,
     PetComponent,
-    FindDogComponent
+    FindDogComponent,
+    AddDogComponent
   ],
   imports: [
     BrowserModule,
