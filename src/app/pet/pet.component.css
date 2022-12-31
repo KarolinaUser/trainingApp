@@ -1,0 +1,12 @@
+.pet {
+  padding: 10px;
+  background: #ff0000;
+}
+
+.pet.available {
+  background: #0000FF;
+}
+
+.pet span {
+  padding: 0 5px;
+}

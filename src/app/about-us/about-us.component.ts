@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-about-us',
   templateUrl: './about-us.component.html',
@@ -7,6 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutUsComponent implements OnInit {
 
+
+
+
+  
+   //ng image slider
    imageObject = [
     {
       image: 'assets/img1.png',
