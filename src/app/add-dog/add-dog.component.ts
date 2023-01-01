@@ -27,7 +27,8 @@ export class AddDogComponent {
   }
 
   removeDog(dogid: number) {
-    this.addPet = this.addPet.filter(({ id }) => id !== dogid);
+    this.addPet = this.addPet.filter(({ id }) => id !== dogid) ;
+    
   }
 
   getNewDogId(): number {

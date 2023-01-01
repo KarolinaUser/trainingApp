@@ -24,7 +24,7 @@
         tortor sed accumsan convallis.
       </p>
       <div class="inputPosition">
-        <input type="text" placeholder="ADD DOG" #name #age />
+        <input type="text" placeholder="ADD DOG" #name  onfocus="this.value=''"/>
         <button class="addBtn" (click)="addDog(name.value)">
           ADD</button>
       </div>
@@ -37,7 +37,7 @@
             <th>DELETE</th>
           </tr>
           <tr *ngFor="let dogadd of addPet; let i = index; trackBy: trackByUserId">
-            <td>{{ dogadd.id }}</td>
+            <td>{{ i }}</td>
             <td>{{ dogadd.name }}</td>
             <td>
               <button (click)="removeDog(dogadd.id)">
