@@ -10,26 +10,32 @@ import {TestComponent} from './test/test.component';
 import { PetComponent } from './pet/pet.component';
 import { FindDogComponent } from './find-dog/find-dog.component';
 import { AddDogComponent } from './add-dog/add-dog.component';
+import { PetListItemComponent } from './pet-list-item/pet-list-item.component';
+import { CatComponent } from './cat/cat.component';
+import { NewCatListComponentModule } from "./components/new-cat-list/new-cat-list.component-module";
 
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    AboutUsComponent,
-    HomeComponent,
-    NextDirective,
-    BackDirective,
-    TestComponent,
-    PetComponent,
-    FindDogComponent,
-    AddDogComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        AboutUsComponent,
+        HomeComponent,
+        NextDirective,
+        BackDirective,
+        TestComponent,
+        PetComponent,
+        FindDogComponent,
+        AddDogComponent,
+        PetListItemComponent,
+        CatComponent
+    ],
+    providers: [],
+    bootstrap: [AppComponent],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        NewCatListComponentModule
+    ]
 })
 export class AppModule {
 }

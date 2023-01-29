@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { addDog } from '../add-dog/add-dog.component';
 
 @Component({
   selector: 'app-find-dog',
@@ -7,9 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FindDogComponent implements OnInit {
 
-  constructor() { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit() {}
 
+  constructor(){ }
 }

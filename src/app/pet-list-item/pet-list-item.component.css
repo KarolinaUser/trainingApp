@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+table {
+    width: 600px;
+}
+
+.tablePosition {
+    display: flex;
+    justify-content: center;
+}
+
+table, td, th {
+    padding: 20px;
+    border: 1px solid gray;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+
+
+th {
+    background-color: cadetblue;
+}
+
+tr:nth-child(odd) {
+    background-color: antiquewhite;
+} 

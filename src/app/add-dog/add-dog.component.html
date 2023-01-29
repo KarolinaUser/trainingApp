@@ -1,51 +1,39 @@
 <header class="header">
-    <h1>Add another dog to the list...</h1>
-  </header>
-  
-  <div class="wrapper">
-    <div class="aside aside-1">
-      <h2>Importatnt Information</h2>
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime culpa id,
-        quam qui alias laboriosam. Est reiciendis magnam consequuntur dicta qui
-        atque velit, nam quisquam impedit debitis recusandae esse! Nihil modi quo
-        odio, quasi enim ipsum eligendi eius deserunt earum quidem sint illo ad.
-        Aut cupiditate unde earum eaque molestias.
-      </p>
-    </div>
-  
-    <div class="main">
-      <h2>HOW IT WORKS...</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet
-        pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum
-        magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo
-        tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque
-        tortor sed accumsan convallis.
-      </p>
-      <div class="inputPosition">
-        <input type="text" placeholder="ADD DOG" #name  onfocus="this.value=''"/>
-        <button class="addBtn" (click)="addDog(name.value)">
-          ADD</button>
-      </div>
-  
-      <div class="tablePosition">
-        <table>
-          <tr>
-            <th>ID</th>
-            <th>NAME</th>
-            <th>DELETE</th>
-          </tr>
-          <tr *ngFor="let dogadd of addPet; let i = index; trackBy: trackByUserId">
-            <td>{{ i }}</td>
-            <td>{{ dogadd.name }}</td>
-            <td>
-              <button (click)="removeDog(dogadd.id)">
-                <i class="fa-solid fa-trash-can"></i>
-              </button>
-            </td>
-          </tr>
-        </table>
-      </div>
-    </div>
+  <h1>Add another dog to the list...</h1>
+</header>
+
+<div class="wrapper">
+  <div class="aside aside-1">
+    <h2>Importatnt Information</h2>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime culpa id,
+      quam qui alias laboriosam. Est reiciendis magnam consequuntur dicta qui
+      atque velit, nam quisquam impedit debitis recusandae esse! Nihil modi quo
+      odio, quasi enim ipsum eligendi eius deserunt earum quidem sint illo ad.
+      Aut cupiditate unde earum eaque molestias.
+    </p>
   </div>
+
+  <div class="main">
+    <h2>HOW IT WORKS...</h2>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet
+      pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum
+      magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo
+      tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque
+      tortor sed accumsan convallis.
+    </p>
+
+    <p>ADD DOG...</p>
+     <div class="inputPosition">
+     <div ><input type="text" placeholder="ADD NAME" #name  onfocus="this.value=''" /></div>
+     <div><input type="text" placeholder="ADD breed of dog  " #rasa/></div>
+     <div> <input type="text" placeholder="ADD Age" #age/></div>
+    
+      <button class="addBtn" (click)="addDogs(name.value, rasa.value, age.value)">
+        ADD</button>
+     </div> 
+
+    <app-pet-list-item *ngFor="let dogadd of addPet;  let i = index;  trackBy: trackByUserId" [pet]="dogadd" (onDelete)="removeDog($event)"></app-pet-list-item>
+  </div>
+</div>
