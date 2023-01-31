@@ -1,0 +1,15 @@
+<div class="container">
+  <h2>LISTA KOTÓW Z WYSZUKIWANIEM</h2>
+  <div class="btn-position">
+    <div class="input-group mb-3">
+       <button class="btn btn-outline-secondary" type="button" id="button-addon1">
+        Search
+      </button> 
+      <input [(ngModel)]="searchText" type="text" name="search" class="form-control"
+        placeholder="search cat by name and id" aria-label="Example text with button addon"
+        aria-describedby="button-addon1" />
+    </div>  
+  <app-just-search-button *ngFor="let cats of catLista | filter:searchText" [catSearch]="cats"></app-just-search-button>
+</div> 
+
+   </div> 

@@ -8,7 +8,9 @@ import { AddDogComponent } from './add-dog/add-dog.component';
 import { PetListItemComponent } from './pet-list-item/pet-list-item.component';
 import { CatComponent } from './cat/cat.component';
 import { NewCatListComponent } from './components/new-cat-list/new-cat-list.component';
+import { SearchCatComponent } from './components/search-cat/search-cat.component';
 import { NewCatListComponentModule } from './components/new-cat-list/new-cat-list.component-module';
+import { SearchCatComponentModule } from './components/search-cat/search-cat.component-module';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -18,11 +20,12 @@ const routes: Routes = [
   { path: 'add-dog', component: AddDogComponent },
   { path: 'pet-list', component: PetListItemComponent },
   { path: 'cat', component: CatComponent },
-  { path: 'new-cat', component: NewCatListComponent }
+  { path: 'new-cat', component: NewCatListComponent },
+  { path: 'search', component: SearchCatComponent }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes), NewCatListComponentModule],
+  imports: [RouterModule.forRoot(routes), NewCatListComponentModule, SearchCatComponentModule],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

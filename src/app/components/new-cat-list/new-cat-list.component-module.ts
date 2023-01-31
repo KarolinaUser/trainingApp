@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { NewCatListComponent } from './new-cat-list.component';
 
 @NgModule({
-  imports: [CommonModule],
+  imports: [CommonModule,  ],
   declarations: [NewCatListComponent],
   providers: [],
   exports: [NewCatListComponent]

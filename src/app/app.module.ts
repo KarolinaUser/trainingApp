@@ -13,6 +13,8 @@ import { AddDogComponent } from './add-dog/add-dog.component';
 import { PetListItemComponent } from './pet-list-item/pet-list-item.component';
 import { CatComponent } from './cat/cat.component';
 import { NewCatListComponentModule } from "./components/new-cat-list/new-cat-list.component-module";
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
 
 
 @NgModule({
@@ -34,7 +36,12 @@ import { NewCatListComponentModule } from "./components/new-cat-list/new-cat-lis
     imports: [
         BrowserModule,
         AppRoutingModule,
-        NewCatListComponentModule
+        NewCatListComponentModule,
+        FormsModule,
+        ReactiveFormsModule,
+        Ng2SearchPipeModule,
+      
+       
     ]
 })
 export class AppModule {
