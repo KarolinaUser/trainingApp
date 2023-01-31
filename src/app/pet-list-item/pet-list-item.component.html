@@ -1,0 +1,24 @@
+<div class="tablePosition">
+  <table *ngIf="pet !== undefined" >
+     <thead>
+      <tr>
+        <th>NUMBER</th>
+        <th>NAME</th> 
+        <th>BREED of DOG</th>
+        <th>AGE</th>
+        <th>DELETE</th>
+      </tr>
+    </thead> 
+    <tbody >
+      <td>{{ pet.id}}</td>
+      <td>{{ pet.name }}</td>
+      <td>{{ pet.rasa }}</td>
+      <td>{{ pet.age }}</td>
+      <td>
+        <button (click)="removeDog(pet.id)">
+          <i class="fa-solid fa-trash-can"></i>
+        </button>
+      </td>
+    </tbody>
+  </table>
+</div>

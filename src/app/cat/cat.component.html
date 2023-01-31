@@ -1,0 +1,15 @@
+<h1>Lista kotów</h1>
+
+<h2>Dodaj Kota do listy</h2>
+
+<div><input type="text" placeholder="ADD NAME" #name  onfocus="this.value=''" /></div>
+<div><input type="text" placeholder="ADD breed of cat"  #breed/></div>
+<button  (click)="addCat(name.value, breed.value)">ADD NEW CAT</button>
+
+ <app-new-cat-list *ngFor="let cats of catList;" [cat]="cats" (onDeleteCat)="removeCat($event)"></app-new-cat-list>
+
+ 
+
+
+
+   

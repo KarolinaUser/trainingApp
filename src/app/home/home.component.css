@@ -1,105 +1,108 @@
-.buttonHome {
-    display: inline-block;
-    padding: 20px;
-    margin-right: 20px;
-    font-size: 24px;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    outline: none;
-    color: blanchedalmond;
-    background-color: cadetblue;
-    border: none;
-    border-radius: 15px;
-    box-shadow: 0 9px #999;
-  }
-  
-  .buttonHome:hover {background-color: lightskyblue}
-  
-  .buttonHome:active {
-    background-color: lightskyblue;
-    box-shadow: 0 5px #666;
-    transform: translateY(4px);
-  }
+.wrapper {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
 
+.dogButton {
+  padding: 30px;
+  font-size: 24px;
+  cursor: pointer;
+  text-decoration: none;
+  outline: none;
+  color: blanchedalmond;
+  background-color: cadetblue;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 4px #999;
+  margin-bottom: 40px;
+  margin-top: 30px;
+}
 
-  .carousel {
-    height: 60vh ;
-    width: 100% ;
-    display: flex ;
-    flex-direction: column ;
-    align-items: center ;
-    justify-content: space-between ;
-    perspective: 100rem ;
+.dogButton:hover {
+  background-color: lightskyblue
+}
 
-  }
-
-  .carousel_cards {
-    position: relative;
-    width: 20rem;
-    height: 20rem;
-    transform-style: preserve-3d;
-    transform: translateZ(-25rem);
-    transition: transform 0.3s ease-in;
-  }
-
-  .carousel_img {
+ 
+.carousel {
+  height: 55vh ;
   width: 100% ;
-  height: 100%;
-  display: inline-block;
-  }
+  display: flex ;
+  flex-direction: column ;
+  align-items: center ;
+  justify-content: space-between ;
+  perspective: 100rem ;
+}
 
-  .carousel_card {
-    width: 100% ;
-    height: 100% ;
-    position: absolute;
-    border: 2px solid black;
-    border-radius: 0.2rem;
-    font-size: 3rem;
-    font-weight: 700;
-  }
+.carousel_cards {
+  position: relative;
+  width: 20rem;
+  height: 20rem;
+  transform-style: preserve-3d;
+  transform: translateZ(-25rem);
+  transition: transform 0.3s ease-in;
+}
 
-  .carousel_card:nth-child(1) {
-    transform: rotateY(0deg) translateZ(25rem);
-  }
+.carousel_img {
+width: 100% ;
+height: 100%;
+display: inline-block;
+}
 
-  .carousel_card:nth-child(2) {
-    transform: rotateY(45deg) translateZ(25rem);
-  }
+.carousel_card {
+  width: 100% ;
+  height: 100% ;
+  position: absolute;
+  border: 2px solid black;
+  border-radius: 0.2rem;
+  font-size: 3rem;
+  font-weight: 700;
+}
 
-  .carousel_card:nth-child(3) {
-    transform: rotateY(90deg) translateZ(25rem);
-  }
+.carousel_card:nth-child(1) {
+  transform: rotateY(0deg) translateZ(25rem);
+}
 
-  .carousel_card:nth-child(4) {
-    transform: rotateY(135deg) translateZ(25rem);
-  }
+.carousel_card:nth-child(2) {
+  transform: rotateY(45deg) translateZ(25rem);
+}
 
-  .carousel_card:nth-child(5) {
-    transform: rotateY(180deg) translateZ(25rem);
-  }
+.carousel_card:nth-child(3) {
+  transform: rotateY(90deg) translateZ(25rem);
+}
 
+.carousel_card:nth-child(4) {
+  transform: rotateY(135deg) translateZ(25rem);
+}
+
+.carousel_card:nth-child(5) {
+  transform: rotateY(180deg) translateZ(25rem);
+} 
 
 .carousel_card:nth-child(6) {
-  transform: rotateY(225deg) translateZ(25rem);
+transform: rotateY(225deg) translateZ(25rem);
 }
 
 .carousel_card:nth-child(7) {
-    transform: rotateY(270deg) translateZ(25rem);
-  }
-
-  .carousel_card:nth-child(8) {
-    transform: rotateY(315deg) translateZ(25rem);
-  }
-
-  .carousel_btn {
-    margin: 5px;
-    color: cadetblue;
-    border-radius: 20px;
-  }
- 
-  i {
-    margin: 20px;
-    font-size: x-large;
+  transform: rotateY(270deg) translateZ(25rem);
 }
-  
+
+.carousel_card:nth-child(8) {
+  transform: rotateY(315deg) translateZ(25rem);
+}
+
+.carousel_btn {
+  color: cadetblue;
+  border-radius: 20px;
+}
+
+i {
+  margin: 20px;
+  font-size: x-large;
+}
+
+ .buttonPosition {
+   display: flex;
+   column-gap: 15px;
+}
+

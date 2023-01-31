@@ -1,35 +1,14 @@
-<nav>
-  <div class="logo">
-    <a routerLink="/"
-      ><i class="fa-solid fa-dog" alt="dog"><span>LOGO</span></i></a>
-  </div>
-  <ul class="menu">
-    <li>
-      <a routerLink="/about-us"
-        ><i class="fa-solid fa-house-chimney-user"></i>ABOUT US</a>
-    </li>
-    <li>
-      <a href="/"><i class="fa-solid fa-earth-americas"></i>OUR MISSION</a>
-    </li>
-    <li>
-      <a href="/"><i class="fa-solid fa-envelope-circle-check"></i>CONTACT</a>
-    </li>
-    <li>
-      <a href="/"><i class="fa-solid fa-user-plus"></i>SIGN IN</a>
-    </li>
-    <li>
-      <a href="/"><i class="fa-solid fa-pen-to-square"></i>REGISTER</a>
-    </li>
+<nav class="navbar">
+  <ul>
+    <li class="navbar-logo"><a routerLink="/"><i class="fa-solid fa-dog"></i>LOGO</a></li>
+    <li class="navbar-toggle"><i class="fa-solid fa-bars"></i></li>
+    <li class="navbar-links"><a routerLink="/"><i class="fa-solid fa-paw"></i>HOME</a></li>
+    <li class="navbar-links"><a routerLink="/about-us"><i class="fa-solid fa-users"></i>ABOUT US</a></li>
+    <li class="navbar-links"><a routerLink="/"><i class="fa-solid fa-earth-americas"></i>OUR MISSION</a></li>
+    <li class="navbar-links"><a routerLink="/"><i class="fa-solid fa-envelope-circle-check"></i>CONTACT</a></li>
+    <li class="navbar-links"><a routerLink="/"><i class="fa-solid fa-right-to-bracket"></i>SIGN IN</a></li>
+    <li class="navbar-links"><a routerLink="/"><i class="fa-solid fa-user-plus"></i>REGISTER</a></li>
   </ul>
 </nav>
+
 <router-outlet></router-outlet>
-
-
-
-
-
-
-
-
-
-

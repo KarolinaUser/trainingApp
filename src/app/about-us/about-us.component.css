@@ -1,35 +1,67 @@
-.header {
-    background-color: #f1f1f1;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  /* Create three unequal columns that floats next to each other */
-  .column {
-    float: left;
-    padding: 15px;
-  }
-  
-  /* Left and right column */
-  .column.side {
-    width: 15%;
-  }
-  
-  /* Middle column */
-  .column.middle {
-    width: 60%;
-  }
-  
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
-    .column.side, .column.middle {
-      width: 100%;
-    }
+
+* {
+  box-sizing: border-box;
 }
+
+.wrapper {
+  display: flex;
+}
+
+.wrapper > * {
+  padding: 10px;
+}
+
+.header {
+  background: ghostwhite;
+  text-align: center;
+  margin: 0;
+  padding: 30px;
+}
+
+.main {
+  text-align: left;
+  flex: 3;
+}
+
+.aside-1 i {
+  margin: 5px;
+}
+
+.aside-1 .aside-2 {
+  flex: 1;
+}
+
+h2 {
+  color: gray;
+}
+
+@media all and (max-width: 600px) {
+  .wrapper { 
+    flex-direction: column;
+   }
+
+   .main {
+    order: 1;
+   }
+
+   .aside-1 {
+    order: 2;
+   }
+
+   .aside-2 {
+    order: 3;
+   }
+}
+
+@media all and (min-width: 600px) {
+  .aside { flex: 1 0 0; }
+}
+
+@media all and (min-width: 800px) {
+  .main    { flex: 3 0px; }
+  .aside-1 { order: 1; } 
+  .main    { order: 2; }
+  .aside-2 { order: 3; }
+  .footer  { order: 4; }
+}
+

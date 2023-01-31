@@ -1,0 +1,6 @@
+
+
+<ul *ngIf="cat !== undefined ">
+    <li>{{cat.id}} {{cat.name}} {{cat.breed}}</li> 
+   <button type="button" (click)="removeCat(cat.id)">Remove Cat</button>
+</ul>

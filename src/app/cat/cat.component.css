@@ -1,0 +1,14 @@
+* {
+    box-sizing: border-box;
+   
+}
+
+button {
+    margin: 20px;
+    color: blue;
+}
+
+input {
+    margin: 10px;
+}
+
