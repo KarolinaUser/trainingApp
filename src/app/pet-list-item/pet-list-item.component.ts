@@ -21,5 +21,6 @@ export class PetListItemComponent {
     this.onDelete.next(id);
   }
 
-  
+  @Input()
+  index: number | undefined
 }

@@ -1,5 +1,5 @@
 <div class="tablePosition">
-  <table *ngIf="pet !== undefined" >
+  <table *ngIf="pet !== undefined && index !== undefined" >
      <thead>
       <tr>
         <th>NUMBER</th>
@@ -10,7 +10,7 @@
       </tr>
     </thead> 
     <tbody >
-      <td>{{ pet.id}}</td>
+      <td>{{ index + 1 }}</td>
       <td>{{ pet.name }}</td>
       <td>{{ pet.rasa }}</td>
       <td>{{ pet.age }}</td>

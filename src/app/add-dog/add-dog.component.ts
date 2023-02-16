@@ -4,7 +4,7 @@ export interface addDog {
   id: number;
   name: string;
   rasa: string;
-  age: string;
+  age: number;
 }
 
 @Component({
@@ -15,18 +15,18 @@ export interface addDog {
 })
 export class AddDogComponent {
   addPet: addDog[] = [
-    { id: 1, name: 'Burek', rasa: 'rasa1', age: '10' },
-    { id: 2, name: 'Ares', rasa: 'rasa2', age: '12' },
-    { id: 3, name: 'Gustaw', rasa: 'rasa3', age: '14' },
+    { id: 1, name: 'Burek', rasa: 'rasa1', age: 1 },
+    { id: 2, name: 'Ares', rasa: 'rasa2', age: 2 },
+    { id: 3, name: 'Gustaw', rasa: 'rasa3', age: 3 },
   ];
 
   addDogs(name: string, rasa: string, age: string) {
-    if ([name, rasa, age]) {
+    if (name) {
       this.addPet.push({
         id: this.getNewDogId(),
         name,
         rasa,
-        age,
+        age: parseInt(age),
       });
     }
   }

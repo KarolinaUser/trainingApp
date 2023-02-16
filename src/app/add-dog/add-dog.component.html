@@ -28,12 +28,12 @@
      <div class="inputPosition">
      <div ><input type="text" placeholder="ADD NAME" #name  onfocus="this.value=''" /></div>
      <div><input type="text" placeholder="ADD breed of dog  " #rasa/></div>
-     <div> <input type="text" placeholder="ADD Age" #age/></div>
+     <div> <input type="number" placeholder="ADD Age" #age/></div>
     
       <button class="addBtn" (click)="addDogs(name.value, rasa.value, age.value)">
         ADD</button>
      </div> 
 
-    <app-pet-list-item *ngFor="let dogadd of addPet;  let i = index;  trackBy: trackByUserId" [pet]="dogadd" (onDelete)="removeDog($event)"></app-pet-list-item>
+    <app-pet-list-item *ngFor="let dogadd of addPet;  let i = index;  trackBy: trackByUserId" [pet]="dogadd" [index]="i" (onDelete)="removeDog($event)"></app-pet-list-item>
   </div>
 </div>
